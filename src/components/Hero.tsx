@@ -66,7 +66,7 @@ export function Hero() {
             variants={staggerChild}
             className="mt-6 max-w-lg sm:mt-7 text-sm leading-relaxed text-muted-foreground sm:text-base"
           >
-            Video produkcija, fotografija in AI oglasi za znamke, podjetja in
+            Video produkcija, fotografiranje in AI oglasi za znamke, podjetja in
             ustvarjalce.
           </motion.p>
 
