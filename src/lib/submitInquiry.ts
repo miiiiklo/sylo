@@ -6,19 +6,23 @@ export type Inquiry = {
   message: string;
 };
 
-/**
- * Edino mesto za pošiljanje povpraševanja.
- * Trenutno samo simulira uspešno pošiljanje (brez backenda).
- * Kasneje tukaj zamenjaj implementacijo, npr.:
- *
- *   await fetch("/api/inquiry", { method: "POST", body: JSON.stringify(data) })
- *
- * ali storitev tipa Formspree / Resend / EmailJS.
- */
 export async function submitInquiry(data: Inquiry): Promise<void> {
-  if (import.meta.env.DEV) {
-    // eslint-disable-next-line no-console
-    console.info("[SYLO] povpraševanje:", data);
+  const response = await fetch("/api/inquiry", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+
+  let result: { error?: string } = {};
+
+  try {
+    result = await response.json();
+  } catch {
   }
-  await new Promise((resolve) => setTimeout(resolve, 900));
+
+  if (!response.ok) {
+    throw new Error(result.error || "Pošiljanje povpraševanja ni uspelo.");
+  }
 }
