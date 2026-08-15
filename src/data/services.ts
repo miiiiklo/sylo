@@ -42,13 +42,13 @@ export const services: Service[] = [
       "Kakovostne fotografije za promocijo, družbena omrežja, izdelke in osebno predstavitev.",
     delivery: "Obdelane fotografije v 2–3 dneh",
     items: [
+      { name: "Fotografiranje brez obdelave", price: "10 €" },
       { name: "Fotografiranje + obdelava fotografije", price: "20 €" },
       {
         name: "Paket – 5 profesionalno obdelanih fotografij",
         price: "80 €",
         highlight: true,
-      },
-      { name: "Fotografiranje brez obdelave", price: "10 €" },
+      },   
     ],
   },
   {
