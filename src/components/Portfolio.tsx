@@ -4,6 +4,7 @@ import { Maximize2, Play, X } from "lucide-react";
 import { portfolio, portfolioFilters, type PortfolioItem } from "@/data/portfolio";
 import { SectionHeading } from "./primitives";
 import { PortfolioVisual } from "./PortfolioVisual";
+import { PORTFOLIO_FILTER_EVENT } from "@/lib/scroll";
 
 type LightboxState =
   | { type: "video"; item: PortfolioItem }
@@ -17,6 +18,16 @@ export function Portfolio() {
   const items = portfolio.filter(
     (p) => filter === "vse" || p.category === filter,
   );
+
+  useEffect(() => {
+    const handleFilterRequest = (event: Event) => {
+      const detail = (event as CustomEvent<string>).detail;
+      if (detail) setFilter(detail);
+    };
+    window.addEventListener(PORTFOLIO_FILTER_EVENT, handleFilterRequest);
+    return () =>
+      window.removeEventListener(PORTFOLIO_FILTER_EVENT, handleFilterRequest);
+  }, []);
 
   const closeLightbox = () => {
     setLightbox(null);

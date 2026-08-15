@@ -4,9 +4,11 @@ import { BrandStatement } from "@/components/BrandStatement";
 import { Services } from "@/components/Services";
 import { AIShowcase } from "@/components/AIShowcase";
 import { Portfolio } from "@/components/Portfolio";
+import { Testimonials } from "@/components/Testimonials";
 import { WhySylo } from "@/components/WhySylo";
 import { Process } from "@/components/Process";
 import { CTA } from "@/components/CTA";
+import { FAQ } from "@/components/FAQ";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { BackToTop } from "@/components/BackToTop";
@@ -27,9 +29,11 @@ export function SyloPage() {
         <Services />
         <AIShowcase />
         <Portfolio />
+        <Testimonials />
         <WhySylo />
         <Process />
         <CTA />
+        <FAQ />
         <Contact />
       </main>
       <Footer />

@@ -10,6 +10,8 @@ export type Service = {
   icon: "video" | "camera" | "sparkles";
   title: string;
   description: string;
+  /** Približen rok dostave, prikazan pod opisom storitve. */
+  delivery: string;
   items: ServiceItem[];
 };
 
@@ -21,9 +23,15 @@ export const services: Service[] = [
     title: "Video produkcija",
     description:
       "Profesionalni video posnetki za oglase, družbena omrežja, promocijo in predstavitev vaše znamke.",
+    delivery: "Dostava v 3–5 delovnih dneh",
     items: [
       { name: "Video reklama", note: "15–60 sekund", price: "60 €" },
-      { name: "Daljši video", note: "Več kot 60 sekund", price: "Po dogovoru" },
+      {
+        name: "Daljši video",
+        note: "Več kot 60 sekund",
+        price: "Po dogovoru",
+        highlight: true,
+      },
     ],
   },
   {
@@ -32,14 +40,15 @@ export const services: Service[] = [
     title: "Fotografiranje",
     description:
       "Kakovostne fotografije za promocijo, družbena omrežja, izdelke in osebno predstavitev.",
+    delivery: "Obdelane fotografije v 2–3 dneh",
     items: [
-      { name: "Fotografiranje", price: "10 €" },
       { name: "Fotografiranje + obdelava fotografije", price: "20 €" },
       {
         name: "Paket – 5 profesionalno obdelanih fotografij",
         price: "80 €",
         highlight: true,
       },
+      { name: "Fotografiranje brez obdelave", price: "10 €" },
     ],
   },
   {
@@ -48,9 +57,10 @@ export const services: Service[] = [
     title: "AI oglasi",
     description:
       "Kreativne reklamne vsebine, ustvarjene s pomočjo sodobnih AI tehnologij.",
+    delivery: "Dostava v 24–48 urah",
     items: [
       { name: "AI reklamna fotografija", price: "40 €" },
-      { name: "AI video reklama", price: "100 €" },
+      { name: "AI video reklama", price: "100 €", highlight: true },
       { name: "AI video daljši od 15 sekund", price: "Po dogovoru" },
     ],
   },

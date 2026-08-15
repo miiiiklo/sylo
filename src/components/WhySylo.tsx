@@ -1,3 +1,4 @@
+import { Lightbulb, Wand2, Eye, SlidersHorizontal } from "lucide-react";
 import { Reveal, SectionHeading } from "./primitives";
 
 const features = [
@@ -5,21 +6,25 @@ const features = [
     num: "01",
     title: "Kreativnost",
     text: "Vsak projekt začne z idejo.",
+    icon: Lightbulb,
   },
   {
     num: "02",
     title: "Sodobna tehnologija",
     text: "Uporabljamo sodobna orodja za produkcijo in AI.",
+    icon: Wand2,
   },
   {
     num: "03",
     title: "Vizualna kakovost",
     text: "Vsak detajl šteje.",
+    icon: Eye,
   },
   {
     num: "04",
     title: "Prilagodljiv pristop",
     text: "Projekt prilagodimo vašim potrebam in proračunu.",
+    icon: SlidersHorizontal,
   },
 ];
 
@@ -32,12 +37,19 @@ export function WhySylo() {
           {features.map((f, i) => (
             <Reveal key={f.num} delay={i * 0.07}>
               <div className="group relative h-full bg-card p-8 transition-colors duration-500 hover:bg-white/[0.035]">
-                <span
-                  className="font-display text-5xl font-semibold text-primary/70 transition-all duration-500 group-hover:text-primary-bright"
-                  style={{ textShadow: "0 0 28px rgba(139,61,255,0.55)" }}
-                >
-                  {f.num}
-                </span>
+                <div className="flex items-start justify-between">
+                  <span
+                    className="font-display text-5xl font-semibold text-primary/70 transition-all duration-500 group-hover:text-primary-bright"
+                    style={{ textShadow: "0 0 28px rgba(139,61,255,0.55)" }}
+                  >
+                    {f.num}
+                  </span>
+                  <f.icon
+                    size={18}
+                    strokeWidth={1.7}
+                    className="mt-1 text-muted-foreground transition-colors duration-500 group-hover:text-primary-bright"
+                  />
+                </div>
                 <h3 className="mt-6 font-display text-lg font-semibold">
                   {f.title}
                 </h3>

@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "./primitives";
-import { scrollToSection } from "@/lib/scroll";
+import { goToPortfolioFilter } from "@/lib/scroll";
 
 export function AIShowcase() {
   return (
@@ -32,10 +32,10 @@ export function AIShowcase() {
           </Reveal>
           <Reveal delay={0.18}>
             <button
-              onClick={() => scrollToSection("storitve")}
+              onClick={() => goToPortfolioFilter("ai")}
               className="group mt-9 inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 font-display text-[11px] tracking-[0.2em] text-primary-foreground uppercase transition-all duration-300 hover:bg-primary-bright hover:shadow-[0_0_40px_-8px_rgba(139,61,255,0.85)]"
             >
-              Razišči AI produkcijo
+              Poglej AI primere
               <ArrowUpRight
                 size={15}
                 className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"

@@ -5,6 +5,8 @@
 export const site = {
   name: "SYLO",
   tagline: "Video produkcija, fotografiranje in AI oglasi",
+  /** Brez končnega "/" — uporabljeno za absolutne URL-je (npr. og:image). */
+  url: "https://sylo-three.vercel.app",
   email: "syloagency@gmail.com",
   phone: "", // opcijsko: npr. "+386 40 000 000"
   location: "Slovenija",

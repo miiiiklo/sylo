@@ -1,4 +1,4 @@
-import { Camera, Sparkles, Video, type LucideIcon } from "lucide-react";
+import { Camera, Clock, Sparkles, Video, type LucideIcon } from "lucide-react";
 import { services } from "@/data/services";
 import { Reveal, SectionHeading } from "./primitives";
 import { scrollToSection } from "@/lib/scroll";
@@ -39,7 +39,12 @@ export function Services() {
                     {service.description}
                   </p>
 
-                  <ul className="mt-7 space-y-2.5">
+                  <p className="mt-4 inline-flex items-center gap-1.5 self-start text-xs text-primary-bright/80">
+                    <Clock size={13} />
+                    {service.delivery}
+                  </p>
+
+                  <ul className="mt-6 space-y-2.5">
                     {service.items.map((item) => (
                       <li
                         key={item.name}

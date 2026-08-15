@@ -92,7 +92,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-center sm:mt-16 justify-between gap-3 border-t border-border pt-6 sm:flex-row">
           <p className="text-xs text-muted-foreground">
-            © 2026 SYLO. Vse pravice pridržane.
+            © {new Date().getFullYear()} SYLO. Vse pravice pridržane.
           </p>
           <p className="text-xs text-muted-foreground">
             Video produkcija • Fotografiranje • AI oglasi
