@@ -53,14 +53,14 @@ export function AboutTeam() {
           <div className="mt-10 max-w-3xl">
             <p className="text-base leading-8 text-muted-foreground sm:text-lg">
               SYLO je kreativna ekipa, združena okoli ene ideje – ustvarjati
-              vsebino, ki pritegne pozornost.
+              vsebino, ki pritegne pozornost. - AI BULLSHIT
             </p>
 
             <p className="mt-5 text-base leading-8 text-muted-foreground sm:text-lg">
               Združujemo kreativnost, produkcijo, vizualno razmišljanje in
               sodobne AI tehnologije, da ideje spremenimo v prepričljive
               vizualne zgodbe. Vsak projekt gradimo skupaj – od prve ideje do
-              končnega rezultata.
+              končnega rezultata. - AI BULLSHIT
             </p>
           </div>
 
