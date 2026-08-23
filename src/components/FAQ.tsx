@@ -10,22 +10,22 @@ const faqs = [
   {
     question: "Kako poteka plačilo?",
     answer:
-      "Po dogovoru o obsegu projekta pošljemo predračun. Plačilo je možno v celoti ali po delih ob zaključku posameznih faz.",
+      "????",
   },
   {
     question: "Koliko popravkov je vključenih?",
     answer:
-      "V ceno sta vključena 2 kroga popravkov. Dodatni popravki se zaračunajo po dogovoru glede na obseg dela.",
+      "????",
   },
   {
     question: "Ali lahko pošljem svoje reference ali ideje?",
     answer:
-      "Seveda — v povpraševanju lahko priložiš primere, ki so ti všeč, da lažje ujamemo tvojo vizijo že v prvem konceptu.",
+      "????,",
   },
   {
     question: "Kako hitro dobim material?",
     answer:
-      "Odvisno od storitve: AI produkcija je pripravljena v 24–48 urah, fotografije v 2–3 dneh, video produkcija pa v 3–5 delovnih dneh.",
+      "????",
   },
 ];
 

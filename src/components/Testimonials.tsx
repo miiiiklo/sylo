@@ -8,19 +8,19 @@ import { Reveal, SectionHeading } from "./primitives";
 const testimonials = [
   {
     quote:
-      "SYLO nam je v enem tednu pripravil celotno video kampanjo za družbena omrežja. Rezultat je presegel pričakovanja.",
+      "?????",
     name: "Ime Priimek",
     role: "Ime podjetja / znamke",
   },
   {
     quote:
-      "Profesionalen pristop od prve ideje do zaključka. Priporočam vsem, ki iščejo kvalitetno produkcijo.",
+      "?????",
     name: "Ime Priimek",
     role: "Ime podjetja / znamke",
   },
   {
     quote:
-      "AI oglas je bil pripravljen v rekordnem času in je izgledal veliko bolje, kot smo pričakovali za ta proračun.",
+      "?????",
     name: "Ime Priimek",
     role: "Ime podjetja / znamke",
   },
