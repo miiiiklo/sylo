@@ -13,12 +13,17 @@ import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { BackToTop } from "@/components/BackToTop";
 import { AboutTeam } from "./components/AboutTeam";
+import { ComingSoon } from "@/components/ComingSoon";
+import { site } from "@/config/site";
 
 /**
  * Celotna SYLO stran. Ta komponenta je edini vstopni point —
  * v klasičnem Vite projektu jo renderiraj iz App.tsx.
  */
 export function SyloPage() {
+  if (site.maintenanceMode) {
+    return <ComingSoon />;
+  }
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />

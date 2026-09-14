@@ -14,6 +14,7 @@ export const site = {
     { label: "Instagram", href: "https://www.instagram.com/sylo.agency/" },
     { label: "TikTok", href: "https://www.tiktok.com/@syloproduction" },
   ],
+
   nav: [
     { label: "Domov", id: "domov" },
     { label: "O Nas", id: "o-nas" },
@@ -22,4 +23,5 @@ export const site = {
     { label: "Proces", id: "proces" },
     { label: "Kontakt", id: "kontakt" },
   ],
+  maintenanceMode: import.meta.env.VITE_MAINTENANCE_MODE === "true",
 } as const;
