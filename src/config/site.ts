@@ -23,5 +23,5 @@ export const site = {
     { label: "Proces", id: "proces" },
     { label: "Kontakt", id: "kontakt" },
   ],
-  maintenanceMode: import.meta.env.VITE_MAINTENANCE_MODE === "true",
+  maintenanceMode: import.meta.env["VITE_MAINTENANCE_MODE"] === "true",
 } as const;

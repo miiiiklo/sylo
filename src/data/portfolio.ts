@@ -1,5 +1,6 @@
 import starwars from "@/assets/portfolio/videos/starwars.mp4";
 import golf from "@/assets/portfolio/videos/golf.mp4";
+import mcgregor from "@/assets/portfolio/videos/mcgregor.mp4";
 
 
 export type PortfolioCategory = "video" | "foto" | "ai";
@@ -29,10 +30,10 @@ export const portfolioFilters = [
 export const portfolio: PortfolioItem[] = [
   {
     id: "star-wars",
-    title: "Star Wars",
+    title: "Dobrodelna video produkcija",
     category: "video",
     categoryLabel: "Video produkcija",
-    video: starwars,
+    //video: starwars,
     variant: "a",
     wide: true,
   },
@@ -51,11 +52,11 @@ export const portfolio: PortfolioItem[] = [
     variant: "c",
   },
   {
-    id: "golf",
-    title: "Golf Edit",
+    id: "mcgregor",
+    title: "Conor McGregor Edit",
     category: "video",
     categoryLabel: "Video produkcija",
-    video: golf,
+    video: mcgregor,
     variant: "d",
     wide: true,
   },
