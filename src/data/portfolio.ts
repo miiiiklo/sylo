@@ -23,7 +23,7 @@ export type PortfolioItem = {
     label: string;
     value: string;
   }[];
-};
+}; 
 
 export const portfolioFilters = [
   { id: "vse", label: "Vse" },
