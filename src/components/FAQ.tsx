@@ -10,22 +10,17 @@ const faqs = [
   {
     question: "Kako poteka plačilo?",
     answer:
-      "????",
+      "Po potrditvi projekta se dogovorimo o ceni in načinu plačila. Plačilo se izvede po dogovoru, najpogosteje z bančnim nakazilom. Pri večjih projektih je možno tudi predplačilo, preostanek pa po končani izvedbi.",
   },
   {
     question: "Koliko popravkov je vključenih?",
     answer:
-      "????",
+      "V ceno sta vključena do 2 kroga popravkov. Če so potrebne dodatne spremembe, se zanje predhodno dogovorimo glede na obseg dela.",
   },
   {
     question: "Ali lahko pošljem svoje reference ali ideje?",
     answer:
-      "????,",
-  },
-  {
-    question: "Kako hitro dobim material?",
-    answer:
-      "????",
+      "Seveda! Z veseljem upoštevamo vaše reference, ideje in želje. Tako lahko bolje razumemo vaš stil in pripravimo video, ki bo čim bolj ustrezal vašim pričakovanjem.",
   },
 ];
 

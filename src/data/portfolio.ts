@@ -1,10 +1,9 @@
 import starwars from "@/assets/portfolio/videos/starwars.mp4";
 import golf from "@/assets/portfolio/videos/golf.mp4";
 import mcgregor from "@/assets/portfolio/videos/mcgregor.mp4";
-
+import jakna from "@/assets/portfolio/videos/jakna-1.mov";
 
 export type PortfolioCategory = "video" | "foto" | "ai";
-
 
 export type PortfolioItem = {
   id: string;
@@ -18,6 +17,12 @@ export type PortfolioItem = {
   variant: "a" | "b" | "c" | "d";
   /** Nastavi na true za širšo kartico v gridu. */
   wide?: boolean;
+  featured?: boolean;
+  description?: string;
+  details?: {
+    label: string;
+    value: string;
+  }[];
 };
 
 export const portfolioFilters = [
@@ -29,11 +34,36 @@ export const portfolioFilters = [
 
 export const portfolio: PortfolioItem[] = [
   {
-    id: "star-wars",
-    title: "Dobrodelna video produkcija",
+    id: "brand-film",
+    title: "Video, ki nosi zgodbo.",
     category: "video",
     categoryLabel: "Video produkcija",
     //video: starwars,
+    variant: "a",
+    featured: true,
+    description:
+      "Dobrodelni video projekt, ustvarjen z namenom predstaviti zgodbo, ljudi in sporočilo projekta skozi močno vizualno pripoved.",
+    details: [
+      {
+        label: "Storitev",
+        value: "Video produkcija",
+      },
+      {
+        label: "Projekt",
+        value: "Dobrodelni video",
+      },
+      {
+        label: "Leto",
+        value: "2026",
+      },
+    ],
+  },
+  {
+    id: "jakna",
+    title: "Jakna",
+    category: "video",
+    categoryLabel: "Video produkcija",
+    video: jakna,
     variant: "a",
     wide: true,
   },

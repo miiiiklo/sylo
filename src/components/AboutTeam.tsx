@@ -52,15 +52,18 @@ export function AboutTeam() {
 
           <div className="mt-10 max-w-3xl">
             <p className="text-base leading-8 text-muted-foreground sm:text-lg">
-              SYLO je kreativna ekipa, združena okoli ene ideje – ustvarjati
-              vsebino, ki pritegne pozornost. - AI BULLSHIT
+              Smo mladi ustvarjalci, ki smo svojo pot v video produkciji začeli leta 2023.
+
+              Začeli smo na TikToku, nato svoje ustvarjanje razširili na Instagram Reelse in YouTube.
+              Skozi leta smo pridobili izkušnje, izpilili svoje znanje in predvsem ugotovili,
+              da je video produkcija nekaj, kar nas resnično veseli.
             </p>
 
             <p className="mt-5 text-base leading-8 text-muted-foreground sm:text-lg">
-              Združujemo kreativnost, produkcijo, vizualno razmišljanje in
-              sodobne AI tehnologije, da ideje spremenimo v prepričljive
-              vizualne zgodbe. Vsak projekt gradimo skupaj – od prve ideje do
-              končnega rezultata. - AI BULLSHIT
+              Danes svojo kreativnost in izkušnje združujemo pri ustvarjanju vsebin,
+              kjer nam je pomembna vsaka podrobnost – od ideje in snemanja do končne montaže.
+
+              Naša zgodba se je začela z enim videom. Danes gradimo nekaj veliko večjega.
             </p>
           </div>
 

@@ -23,7 +23,7 @@ export const services: Service[] = [
     title: "Video produkcija",
     description:
       "Profesionalni video posnetki za oglase, družbena omrežja, promocijo in predstavitev vaše znamke.",
-    delivery: "Dostava v 3–5 delovnih dneh",
+    delivery: "Dostava v 5–7 delovnih dneh",
     items: [
       { name: "Video reklama", note: "15–60 sekund", price: "60 €" },
       {
@@ -43,10 +43,10 @@ export const services: Service[] = [
     delivery: "Obdelane fotografije v 2–3 dneh",
     items: [
       { name: "Fotografiranje brez obdelave", price: "10 €" },
-      { name: "Fotografiranje + obdelava fotografije", price: "20 €" },
+      { name: "Fotografiranje + obdelava fotografije", price: "15 €" },
       {
         name: "Paket – 5 profesionalno obdelanih fotografij",
-        price: "80 €",
+        price: "70 €",
         highlight: true,
       },   
     ],

@@ -15,6 +15,7 @@ import { BackToTop } from "@/components/BackToTop";
 import { AboutTeam } from "./components/AboutTeam";
 import { ComingSoon } from "@/components/ComingSoon";
 import { site } from "@/config/site";
+import { BehindTheScenes } from "@/components/BehindTheScenes";
 
 /**
  * Celotna SYLO stran. Ta komponenta je edini vstopni point —
@@ -31,6 +32,7 @@ export function SyloPage() {
         <Hero />
         <BrandStatement />
         <AboutTeam />
+        <BehindTheScenes />
         <Services />
         <AIShowcase />
         <Portfolio />
